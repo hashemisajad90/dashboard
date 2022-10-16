@@ -1,38 +1,75 @@
+body{
+  background-color: #0b0c10 !important;
+}
 .App {
   text-align: center;
+  padding: 40px 60px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-modal-content{
+  border-radius: 15px !important;
+  border:  2px solid #45a29e !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-modal-header{
+  border-radius: 15px !important;
+  border-bottom: 1px solid #45a29e  !important;
+}
+.ant-modal-body{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-modal-footer{
+  border-radius: 15px !important;
+  border-top: 1px solid #45a29e  !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-div{
+  width: 80%;
+  display: inline-flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.ant-modal-close{
+  width: 5%;
+  height: 10%;
+  margin: 8px 10px !important;
+}
+input{
+  outline: none !important;
+  border: 2px solid #45a29e !important;
+  border-radius: 10px !important;
+  padding: 7px !important;
+  font-size: 16px !important;
+  margin: 5px !important;
+  cursor: pointer !important;
+}
+button{
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #66a29e !important;
+  color: #fff !important;
+  text-shadow: 0 1px 3px #000 !important;
+  padding: 7px 15px !important;
+  border-radius: 10px !important;
+  border: 2px solid #45a29e !important;
+  box-shadow: 0 -1px 3px #000 !important;
+  font-size: 16px !important;
+  margin: 5px !important;
+  cursor: pointer !important;
+  transition: all 0.3s 0.1s ease-in !important;
+}
+button:hover{
+  background-color: #fff !important;
+  color: #45a29e !important;
+  box-shadow: 0 1px 3px #000 !important;
+  text-shadow: none !important;
+}
+span{
+  font-size: 16px !important;
 }
