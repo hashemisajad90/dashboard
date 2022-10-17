@@ -5,11 +5,11 @@ import Add from "./add";
 export function Header() {
     return(
         <div className="header">
-            <div>
-                <Input type='text' placeholder='Search' />
-                <Buttion text='+' />
-            </div>
             <Add />
+            <div>
+                <Buttion text='+' />
+                <Input type='text' placeholder='جستجو . . . ' />
+            </div>
         </div>
     )
 }
