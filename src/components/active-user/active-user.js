@@ -57,14 +57,14 @@ export function ActiveUser() {
                             clients.map((item, index) => {
                                 return item.id === findClient ? (
                                     <tr key={`p${index}_${item.name}`}>
-                                        <td><Input type='text' defaultValue={item.name} onChange={(e) => setNewInitial({ ...newInitial, name: e.target.value })} /></td>
-                                        <td><Input type='text' defaultValue={item.family} onChange={(e) => setNewInitial({ ...newInitial, family: e.target.value })} /></td>
-                                        <td><Input type='text' defaultValue={item.date_of_brith} onChange={(e) => setNewInitial({ ...newInitial, date_of_brith: e.target.value })} /></td>
-                                        <td><Input type='text' defaultValue={item.age} onChange={(e) => setNewInitial({ ...newInitial, age: e.target.value })} /></td>
-                                        <td><Input type='text' defaultValue={item.size} onChange={(e) => setNewInitial({ ...newInitial, size: e.target.value })} /></td>
-                                        <td className=".btn-td">
-                                            <Buttion className='btn-table' type='button' text='done' onClick={() => doneHandler(item.id)} />
-                                            <Buttion className='btn-table' type='button' text='cancel' onClick={() => cancelHandler()} />
+                                        <td><Input className='input_change' type='text' defaultValue={item.name} onChange={(e) => setNewInitial({ ...newInitial, name: e.target.value })} /></td>
+                                        <td><Input className='input_change' type='text' defaultValue={item.family} onChange={(e) => setNewInitial({ ...newInitial, family: e.target.value })} /></td>
+                                        <td><Input className='input_change' type='text' defaultValue={item.date_of_brith} onChange={(e) => setNewInitial({ ...newInitial, date_of_brith: e.target.value })} /></td>
+                                        <td><Input className='input_change' type='text' defaultValue={item.age} onChange={(e) => setNewInitial({ ...newInitial, age: e.target.value })} /></td>
+                                        <td><Input className='input_change' type='text' defaultValue={item.size} onChange={(e) => setNewInitial({ ...newInitial, size: e.target.value })} /></td>
+                                        <td className="btn-td">
+                                            <Buttion className='btn-table' type='button' icon={<i class="bi bi-x-lg"></i>} onClick={() => cancelHandler()} />
+                                            <Buttion className='btn-table' type='button' icon={<i class="bi bi-check-lg"></i>} onClick={() => doneHandler(item.id)} />
                                         </td>
                                     </tr>)
                                     :
@@ -75,15 +75,15 @@ export function ActiveUser() {
                                             <td>{item.date_of_brith}</td>
                                             <td>{item.age}</td>
                                             <td>{item.size}</td>
-                                            <td className=".btn-td">
-                                                <Buttion className='btn-table' type='button' text='delete' onClick={() => dispatch(deleted(item.id))} />
-                                                <Buttion className='btn-table' type='button' text='edit' onClick={() => editHandler(item.id)} />
+                                            <td className="btn-td">
+                                                <Buttion className='btn-table' type='button' icon={<i class="bi bi-trash3"></i>} onClick={() => dispatch(deleted(item.id))} />
+                                                <Buttion className='btn-table' type='button' icon={<i class="bi bi-pencil"></i>} onClick={() => editHandler(item.id)} />
                                             </td>
                                         </tr>
                                     )
                             })
                             :
-                            <h1>کمی صبر کنید ...</h1>
+                            <i class="bi bi-arrow-clockwise"></i>
                     }
                 </tbody>
             </table>

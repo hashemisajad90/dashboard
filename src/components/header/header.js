@@ -7,7 +7,7 @@ export function Header() {
         <div className="header">
             <Add />
             <div>
-                <Buttion text='+' />
+                <Buttion icon={<i className="bi bi-search"></i>} />
                 <Input type='text' placeholder='جستجو . . . ' />
             </div>
         </div>

@@ -132,7 +132,7 @@ span{
   font-size: 16px !important;
 }
 #active-h4{
-  color: #fff !important;
+  color: #000 !important;
   margin: 15px 0 !important;
   align-self: flex-start !important;
 }
@@ -141,37 +141,38 @@ span{
   justify-content: center !important; 
   align-items: center !important;
   margin: 10px 20px !important;
-  border-radius: 20px !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
   overflow: hidden !important;
   font-size: 16px !important;
 }
 .table{
   text-align: center !important;
-  color: #fff !important;
-  border: 3px solid #151965 !important;
-  padding: 10px 0 !important;
+  color: #000 !important;
+  border: 2px solid #151965 !important;
+  padding: 0 !important;
   margin-bottom: 0 !important;
 }
 .table thead{
-  border: 3px solid #151965 !important;
+  color: #fff !important;
+  border: 2px solid #151965 !important;
   background-color: #151965;
 }
 .table tbody{
-  border: 3px solid #151965 !important;
+  border: 2px solid #151965 !important;
 }
 .table th{
-  padding: 15px 0 !important;
+  padding: 10px 0 !important;
   border-bottom: none !important;
 }
 .table td{
-  padding: 20px 0 !important;
-  border-top: 2px solid #151965 !important;
+  padding: 10px 0 !important;
+  border-top: 1px solid #151965 !important;
 }
 .btn-td{
+  width: 20% !important;
   padding: 0 !important;
   margin: 0 !important;
-  text-align: center !important;
-  width: 20% !important;
 }
 .btn-table{
   display: inline-flex !important;
@@ -180,12 +181,21 @@ span{
   background-color: #151965 !important;
   color: #fff !important;
   text-shadow: 0 1px 3px #000 !important;
-  padding: 8px 15px !important;
-  border-radius: 10px !important;
-  border: 2px solid #293A80 !important;
+  border: none !important;
+  padding: 10px 15px !important;
+  border-radius: 50px !important;
   box-shadow: 0 -1px 3px #000 !important;
   font-size: 16px !important;
-  margin: 5px !important;
+  margin: 0 5px !important;
   cursor: pointer !important;
-  transition: all 0.3s 0.1s ease-in !important;
+  transition: all 0.2s 0.1s ease-in !important;
+}
+.input_change{
+  padding: 3px 10px !important;
+  margin: 0 !important;
+  width: 70% !important;
+}
+.bi-arrow-clockwise{
+  margin: 20px auto !important;
+  font-size: 30px !important;
 }
