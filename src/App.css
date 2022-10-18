@@ -6,29 +6,25 @@
   font-family: "Vazir-FD" !important;
 }
 body{
-  background-color: #142850 !important;
   direction: rtl !important;
+  background-color: #1519650e !important;
 }
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 60px;
+  padding: 30px 50px;
 }
 .orginal{
   padding: 20px 30px !important;
-  background-color: #32407B;
-  border-radius: 8px!important;
-  width: 90% !important;
+  background-color: #0000000a !important;
+  z-index: 1 !important;
+  border-radius: 5px!important;
+  width: 95% !important;
   display: flex !important;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-}
-h1{
-  color: #fff !important;
-  font-size: 35px !important;
-  font-weight: normal !important;
 }
 .header{
   width: 100%;
@@ -43,30 +39,31 @@ h1{
   background-color: #151965 !important;
   color: #fff !important;
   text-shadow: 0 1px 3px #000 !important;
-  padding: 20px 15px !important;
-  border-radius: 10px !important;
-  border: 2px solid #293A80 !important;
+  border: none !important;
+  padding: 15px !important;
+  border-radius: 50px !important;
   box-shadow: 0 -1px 3px #000 !important;
   font-size: 16px !important;
-  margin: 5px !important;
+  margin: 3px !important;
   cursor: pointer !important;
-  transition: all 0.3s 0.1s ease-in !important;
+  transition: all 0.2s 0.1s ease-in !important;
 }
 .ant-modal-content{
-  border-radius: 15px !important;
-  border:  2px solid #fff !important;
-  background-color: #32407B !important;
-  color: #fff !important;
+  border-radius: 5px !important;
+  border: 2px solid #151965 !important;
+  background-color: #fff !important;
+  color: #000 !important;
 }
 .ant-modal-header{
+  padding: 15px 20px !important;
   display: flex !important;
-  border-radius: 15px !important;
+  border-radius: 3px !important;
   border-bottom: 1px solid #151965  !important;
-  background-color: #32407B !important;
-  color: #fff !important;
+  background-color: #fff !important;
+  color: #000 !important;
 }
 .ant-modal-title{
-  color: #fff !important;
+  color: #000 !important;
 }
 .ant-modal-body{
   display: flex;
@@ -77,29 +74,34 @@ h1{
 .ant-modal-footer{
   direction: ltr !important;
   text-align: center !important;
-  border-radius: 15px !important;
-  border-top: 1px solid #151965  !important;
+  border-radius: 3px !important;
+  border-top: 1px solid #151965 !important;
 }
 .modal-div{
-  width: 80%;
+  width: 100% !important;
   display: inline-flex !important;
   justify-content: space-between !important;
   align-items: center !important;
 }
+.input-modal{
+  width: 50% !important;
+  padding: 5px 3px !important;
+}
 .ant-modal-close{
+  border-radius: 65px !important;
   right: unset !important;
   left: 0 !important; 
-  width: 7% !important;
-  height: 10% !important;
+  width: 5% !important;
+  height: 9% !important;
   margin: 8px 10px !important;
+  border: none !important;
 }
 Input{
   outline: none !important;
   border: 1px solid #151965 !important;
-  background-color: #e7e6e6 !important;
   color: #000 !important; 
-  border-radius: 10px !important;
-  padding: 8px !important;
+  border-radius: 16px !important;
+  padding: 5px 3px !important;
   font-size: 16px !important;
   margin: 5px !important;
   cursor: pointer !important;
@@ -111,14 +113,14 @@ Button{
   background-color: #151965 !important;
   color: #fff !important;
   text-shadow: 0 1px 3px #000 !important;
-  padding: 8px 15px !important;
-  border-radius: 10px !important;
-  border: 2px solid #293A80 !important;
+  border: none !important;
+  padding: 5px 20px !important;
+  border-radius: 50px !important;
   box-shadow: 0 -1px 3px #000 !important;
   font-size: 16px !important;
-  margin: 5px !important;
+  margin: 3px !important;
   cursor: pointer !important;
-  transition: all 0.3s 0.1s ease-in !important;
+  transition: all 0.2s 0.1s ease-in !important;
 }
 button:hover{
   background-color: #fff !important;
