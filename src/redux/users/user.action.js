@@ -1,5 +1,5 @@
 import { type } from "@testing-library/user-event/dist/type";
-import { ADD, DELETE, EDIT } from "./user.constant";
+import { ADD, DELETE, EDIT, SEARCH } from "./user.constant";
 
 export function add(userInformation) {
     return {
@@ -21,5 +21,12 @@ export function edit(id , options) {
             id:id,
             option:options,
         },
+    }
+}
+
+export function search(searchObj) {
+    return{
+        type: SEARCH,
+        payload: searchObj,
     }
 }

@@ -1,4 +1,4 @@
-import { ADD, DELETE, EDIT } from "./user.constant";
+import { ADD, DELETE, EDIT, SEARCH } from "./user.constant";
 import { initialState } from "./user.state";
 
 export function reducer(state = initialState, action) {
@@ -10,8 +10,14 @@ export function reducer(state = initialState, action) {
         case EDIT:
             let index = state.clients.findIndex(item => item.id === action.payload.id)
             let newState = [...state.clients]
-             newState[index] = action.payload.option
-            return { ...state , clients: newState}
+            newState[index] = action.payload.option
+            return { ...state, clients: newState }
+        case SEARCH:
+            if (action.payload.length === 0 && action.payload == "") {
+                return { ...state, clients: [...state.clients] }
+            }
+            console.log(action.payload);
+            return { ...state, clients: action.payload }
         default:
             return state;
     }
